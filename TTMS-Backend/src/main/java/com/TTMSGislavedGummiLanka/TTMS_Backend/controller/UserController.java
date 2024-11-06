@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     public ResponseEntity<String> sayHello(){
-        return ResponseEntity.ok("Hello User");
+        return ResponseEntity.ok("Hello USER");
     }
 }

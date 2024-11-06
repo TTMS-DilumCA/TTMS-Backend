@@ -1,5 +1,6 @@
 package com.TTMSGislavedGummiLanka.TTMS_Backend.service.impl;
 
+import com.TTMSGislavedGummiLanka.TTMS_Backend.entity.User;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.service.JWTService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -18,12 +19,16 @@ import java.util.function.Function;
 public class JWTServiceImpl implements JWTService {
 
     public String generateToken(UserDetails userDetails) {
-        return Jwts.builder().setSubject(userDetails.getUsername())
+        return Jwts.builder()
+                .setSubject(userDetails.getUsername())
+                .claim("role", "ROLE_" + ((User) userDetails).getRole().name()) // Add the role as a claim
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 24)) // Adjust as needed
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 24))
                 .signWith(getSigningKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
+
+
 
     public String generateRefreshToken(Map<String, Object> extraClaims, UserDetails userDetails) {
         return Jwts.builder().setClaims(extraClaims).setSubject(userDetails.getUsername())
@@ -42,12 +47,12 @@ public class JWTServiceImpl implements JWTService {
         return claimsResolver.apply(claims);
     }
 
-    private Key getSigningKey() {
+    public Key getSigningKey() {
         byte[] key = Decoders.BASE64.decode("413F4428472B4662506553685660597033733676397924422645294840406351");
         return Keys.hmacShaKeyFor(key);
     }
 
-    private Claims extractAllClaims(String token) {
+    public Claims extractAllClaims(String token) {
         return Jwts.parser().setSigningKey(getSigningKey()).build().parseClaimsJws(token).getBody();
     }
 
@@ -59,4 +64,5 @@ public class JWTServiceImpl implements JWTService {
     private boolean isTokenExpired(String token) {
         return extractClaim(token, Claims::getExpiration).before(new Date());
     }
+
 }
