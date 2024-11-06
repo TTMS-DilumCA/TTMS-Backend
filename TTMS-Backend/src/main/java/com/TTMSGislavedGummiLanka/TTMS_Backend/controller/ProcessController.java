@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/process")
+@RequestMapping("/api/v1/mo2")
 public class ProcessController {
 
     @Autowired

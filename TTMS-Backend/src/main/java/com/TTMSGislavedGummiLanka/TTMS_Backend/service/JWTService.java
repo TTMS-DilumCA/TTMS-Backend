@@ -14,6 +14,5 @@ public interface JWTService {
     String generateToken(UserDetails userDetails);
     boolean isTokenValid(String token, UserDetails userDetails);
     String generateRefreshToken(Map<String,Object> extraClaims, UserDetails userDetails);
-    public Key getSigningKey();
-    public Claims extractAllClaims(String token);
+
 }

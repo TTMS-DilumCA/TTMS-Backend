@@ -47,12 +47,12 @@ public class JWTServiceImpl implements JWTService {
         return claimsResolver.apply(claims);
     }
 
-    public Key getSigningKey() {
+    private Key getSigningKey() {
         byte[] key = Decoders.BASE64.decode("413F4428472B4662506553685660597033733676397924422645294840406351");
         return Keys.hmacShaKeyFor(key);
     }
 
-    public Claims extractAllClaims(String token) {
+    private Claims extractAllClaims(String token) {
         return Jwts.parser().setSigningKey(getSigningKey()).build().parseClaimsJws(token).getBody();
     }
 
