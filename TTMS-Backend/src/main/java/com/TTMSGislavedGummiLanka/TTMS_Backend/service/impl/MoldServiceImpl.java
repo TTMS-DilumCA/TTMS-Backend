@@ -52,6 +52,7 @@ public class MoldServiceImpl implements MoldService {
         moldVar.setPlateWeight(mold.getPlateWeight());
         moldVar.setInvestmentNo(mold.getInvestmentNo());
         moldVar.setDescription(mold.getDescription());
+        moldVar.setStatus(mold.getStatus());
         return moldRepo.save(moldVar);
     }
 }
