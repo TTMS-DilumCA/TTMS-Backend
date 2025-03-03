@@ -17,22 +17,22 @@ public class ProcessController {
     @Autowired
     private ProcessService processService;
 
-    @GetMapping
+    @GetMapping("/shared")
     public List<Process> getProcesses() {
         return processService.getProcesses();
     }
 
-    @PostMapping
+    @PostMapping("/shared")
     public Process insert(@RequestBody Process process) {
         return processService.addProcess(process);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/shared/{id}")
     public Process update(@PathVariable String id, @RequestBody Process process) {
         return processService.updateProcess(id, process);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/shared/{id}")
     public ResponseEntity<String> delete(@PathVariable String id) {
         try {
             processService.deleteProcess(id);

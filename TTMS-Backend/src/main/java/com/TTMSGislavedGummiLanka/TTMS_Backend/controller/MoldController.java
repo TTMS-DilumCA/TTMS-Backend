@@ -17,22 +17,22 @@ public class MoldController {
     @Autowired
     private MoldService moldService;
 
-    @GetMapping
+    @GetMapping("/shared")
     public List<Mold> getMolds() {
         return moldService.getMolds();
     }
 
-    @PostMapping
+    @PostMapping("/shared")
     public Mold insert(@RequestBody Mold mold) {
         return moldService.addMold(mold);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/shared/{id}")
     public Mold update(@PathVariable String id, @RequestBody Mold mold) {
         return moldService.updateMold(id, mold);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/shared/{id}")
     public ResponseEntity<String> delete(@PathVariable String id) {
         try {
             moldService.deleteMold(id);
