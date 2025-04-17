@@ -18,7 +18,7 @@ import java.util.Date;
 public class Mold {
     @Id
     private String id; // MongoDB will automatically generate this field
-    private String itemNo;
+
     private String moldNo;
     private String documentNo;
     private String customer;

@@ -27,6 +27,7 @@ public class User implements UserDetails {
     private String email;
     private String password;
     private Role role;
+    private int epfNo;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -60,4 +61,13 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+//    @Override
+//    public int getEpfNo() {
+//        return epfNo;
+//    }
+//@Override
+//    public void setEpfNo(int epfNo) {
+//        this.epfNo = epfNo;
+//    }
 }
