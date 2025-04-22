@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81e2cf9-56c6-48d2-80be-0d066be40a98" name="Changes" comment="created correct api endpoints and deleted unneccesory files">
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/AddNewUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/AddNewUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Mold.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Mold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +141,9 @@
       <workItem from="1744702400157" duration="1161000" />
       <workItem from="1744704052303" duration="4204000" />
       <workItem from="1744787843134" duration="3834000" />
-      <workItem from="1744866740560" duration="3091000" />
+      <workItem from="1744866740560" duration="4493000" />
+      <workItem from="1745298202644" duration="53000" />
+      <workItem from="1745299762653" duration="839000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -208,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730895497184</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created correct api endpoints and deleted unneccesory files">
+      <option name="closed" value="true" />
+      <created>1744873673809</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744873673809</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +245,6 @@
     <MESSAGE value="user authentication new" />
     <MESSAGE value="converted to the latest" />
     <MESSAGE value="created correct api endpoints and deleted unneccesory files" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="created correct api endpoints and deleted unneccesory files" />
   </component>
 </project>
