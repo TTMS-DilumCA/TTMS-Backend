@@ -6,6 +6,7 @@ import com.TTMSGislavedGummiLanka.TTMS_Backend.service.ProcessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,10 +24,10 @@ public class ProcessController {
     }
 
     @PostMapping("/shared")
+    @PreAuthorize("hasAuthority('ROLE_MACHINE_OPERATOR_01')")
     public Process insert(@RequestBody Process process) {
         return processService.addProcess(process);
     }
-
     @PutMapping("/shared/{id}")
     public Process update(@PathVariable String id, @RequestBody Process process) {
         return processService.updateProcess(id, process);
@@ -40,5 +41,10 @@ public class ProcessController {
         } catch (ProcessNotFoundException e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
+    }
+    @PutMapping("/finish/{id}")
+    @PreAuthorize("hasAuthority('ROLE_MACHINE_OPERATOR_01')")
+    public Process finish(@PathVariable String id) {
+        return processService.finishProcess(id);
     }
 }

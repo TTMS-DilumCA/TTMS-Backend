@@ -9,4 +9,5 @@ public interface ProcessService {
     Process addProcess(Process process);
     Process deleteProcess(String id);
     Process updateProcess(String id, Process process);
+    Process finishProcess(String id);
 }

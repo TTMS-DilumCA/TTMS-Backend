@@ -28,6 +28,8 @@ public class User implements UserDetails {
     private String password;
     private Role role;
     private int epfNo;
+    private String profileImageUrl; // New field for profile picture URL
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
