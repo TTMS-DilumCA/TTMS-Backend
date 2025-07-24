@@ -1,5 +1,6 @@
 package com.TTMSGislavedGummiLanka.TTMS_Backend.controller;
 
+import com.TTMSGislavedGummiLanka.TTMS_Backend.dto.ProcessDetailsDTO;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.entity.Process;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.exception.ProcessNotFoundException;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.service.ProcessService;
@@ -47,4 +48,13 @@ public class ProcessController {
     public Process finish(@PathVariable String id) {
         return processService.finishProcess(id);
     }
+
+
+    @GetMapping("/details/{id}")
+    @PreAuthorize("hasRole('ROLE_MANAGER')")
+    public ResponseEntity<ProcessDetailsDTO> getProcessDetails(@PathVariable String id) {
+        ProcessDetailsDTO processDetails = processService.getProcessDetails(id);
+        return ResponseEntity.ok(processDetails);
+    }
+
 }

@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f81e2cf9-56c6-48d2-80be-0d066be40a98" name="Changes" comment="created correct api endpoints and deleted unneccesory files">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/ToolsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/UserProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/CreateToolRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/ProcessDetailsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/ToolStatusCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/ToolWithCrafterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/UserProfileUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Tools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/exception/ToolNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ToolsRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/ToolsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/UserProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/ToolsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/UserProfileServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/ProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/ProcessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Mold.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Mold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ProcessRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ProcessRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/ProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/ProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/MoldServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/MoldServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/ProcessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/ProcessServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Exception" />
         <option value="Enum" />
+        <option value="Exception" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -50,6 +65,9 @@
     &quot;accountId&quot;: &quot;e8837b2a-5ccb-485d-96d0-c1c44eaca869&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -165,6 +183,22 @@
       <workItem from="1751171937071" duration="1303000" />
       <workItem from="1751529497024" duration="2473000" />
       <workItem from="1751604360370" duration="6844000" />
+      <workItem from="1751702383675" duration="6308000" />
+      <workItem from="1751790410535" duration="9216000" />
+      <workItem from="1752209049081" duration="655000" />
+      <workItem from="1752246984321" duration="725000" />
+      <workItem from="1752293013048" duration="864000" />
+      <workItem from="1752416272654" duration="2173000" />
+      <workItem from="1752502591307" duration="2569000" />
+      <workItem from="1752584726623" duration="3869000" />
+      <workItem from="1752763888356" duration="46000" />
+      <workItem from="1752765807957" duration="4882000" />
+      <workItem from="1752817270514" duration="15816000" />
+      <workItem from="1752899632928" duration="695000" />
+      <workItem from="1752929642793" duration="3215000" />
+      <workItem from="1753173213164" duration="651000" />
+      <workItem from="1753255436679" duration="1173000" />
+      <workItem from="1753334960900" duration="5847000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -254,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745301254538</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="created correct api endpoints and deleted unneccesory files">
+      <option name="closed" value="true" />
+      <created>1751704537533</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751704537533</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

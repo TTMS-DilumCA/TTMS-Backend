@@ -53,6 +53,10 @@ public class MoldServiceImpl implements MoldService {
         moldVar.setInvestmentNo(mold.getInvestmentNo());
         moldVar.setDescription(mold.getDescription());
         moldVar.setStatus(mold.getStatus());
+        // Add these lines to update the new fields
+        moldVar.setItem(mold.getItem());
+        moldVar.setCategory(mold.getCategory());
+        moldVar.setTargetedDeliveryDate(mold.getTargetedDeliveryDate());
         return moldRepo.save(moldVar);
     }
 }

@@ -19,15 +19,18 @@ public class Mold {
     @Id
     private String id; // MongoDB will automatically generate this field
 
+    private String item;//new
     private String moldNo;
     private String documentNo;
     private String customer;
+    private String category; //new
     private String shrinkageFactor;
     private String plateSize;
     private String plateWeight;
     private String investmentNo;
     private String description;
     private String status;
+    private Date targetedDeliveryDate;//new
     @CreatedDate
     private Date createdDate;
     @LastModifiedDate
