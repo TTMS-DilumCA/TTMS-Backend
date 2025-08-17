@@ -14,7 +14,7 @@ public class ProcessDetailsDTO {
     private String side;
     private String cuttingToolAmount;
     private String description;
-    private String machine;
+
     private String status;
     private Date startedAt;
     private Date finishedAt;

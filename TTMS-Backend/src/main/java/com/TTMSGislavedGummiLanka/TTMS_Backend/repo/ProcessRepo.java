@@ -4,6 +4,7 @@ import com.TTMSGislavedGummiLanka.TTMS_Backend.entity.Process;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Aggregation;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -20,4 +21,6 @@ public interface ProcessRepo extends MongoRepository<Process, String> {
             "{ $sort: { '_id': 1 } }"
     })
     List<Map<String, Object>> findDailyProcessStats(LocalDateTime startDate);
+    List<Process> findByStartedAtBetween(Date startDate, Date endDate);
+
 }

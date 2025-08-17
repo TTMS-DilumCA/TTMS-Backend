@@ -77,7 +77,7 @@ package com.TTMSGislavedGummiLanka.TTMS_Backend.service.impl;
                 processVar.setMCounter(process.getMCounter());
                 processVar.setCuttingToolAmount(process.getCuttingToolAmount());
                 processVar.setDescription(process.getDescription());
-                processVar.setMachine(process.getMachine());
+
                 return processRepo.save(processVar);
             }
 
@@ -129,7 +129,6 @@ package com.TTMSGislavedGummiLanka.TTMS_Backend.service.impl;
                 dto.setSide(process.getSide());
                 dto.setCuttingToolAmount(process.getCuttingToolAmount());
                 dto.setDescription(process.getDescription());
-                dto.setMachine(process.getMachine());
                 dto.setStatus(process.getStatus());
                 dto.setStartedAt(process.getStartedAt());
                 dto.setFinishedAt(process.getFinishedAt());

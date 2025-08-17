@@ -30,7 +30,9 @@ public class Mold {
     private String investmentNo;
     private String description;
     private String status;
+    private String machine;//new
     private Date targetedDeliveryDate;//new
+    private Date completedDate;//new
     @CreatedDate
     private Date createdDate;
     @LastModifiedDate

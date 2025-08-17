@@ -44,6 +44,7 @@ public class SecurityConfiguration {
                         .requestMatchers("/forgotPassword/**").permitAll()
                         .requestMatchers("/api/profile/**").permitAll()
                         .requestMatchers("/api/manager/**").hasAuthority("ROLE_MANAGER")
+                        .requestMatchers("/api/customers/**").hasAuthority("ROLE_MANAGER")
                         .requestMatchers("/api/mo1").hasAuthority("ROLE_MACHINE_OPERATOR_01")
                         .requestMatchers("/api/mo2").hasAuthority("ROLE_MACHINE_OPERATOR_02")
                         .requestMatchers("/api/mold/shared").hasAnyAuthority("ROLE_MANAGER", "ROLE_MACHINE_OPERATOR_01")

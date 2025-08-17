@@ -23,7 +23,7 @@ package com.TTMSGislavedGummiLanka.TTMS_Backend.entity;
         private String mCounter;
         private String cuttingToolAmount;
         private String description;
-        private String machine;
+
         private String status;
         private String startedOperator;
         private String startedOperatorId;
