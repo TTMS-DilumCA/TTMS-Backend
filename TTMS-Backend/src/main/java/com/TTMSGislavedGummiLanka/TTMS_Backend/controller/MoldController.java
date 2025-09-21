@@ -1,5 +1,6 @@
 package com.TTMSGislavedGummiLanka.TTMS_Backend.controller;
 
+import com.TTMSGislavedGummiLanka.TTMS_Backend.dto.analysedtos.MoldStatisticsDTO;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.entity.Mold;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.exception.MoldNotFoundException;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.service.MoldService;
@@ -22,6 +23,12 @@ public class MoldController {
         return moldService.getMolds();
     }
 
+    @GetMapping("/year/{year}")
+    public ResponseEntity<List<Mold>> getMoldsByYear(@PathVariable int year) {
+        List<Mold> molds = moldService.getMoldsByYear(year);
+        return ResponseEntity.ok(molds);
+    }
+
     @PostMapping("/shared")
     public Mold insert(@RequestBody Mold mold) {
         return moldService.addMold(mold);
@@ -41,4 +48,16 @@ public class MoldController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
+    @PutMapping("/{id}/complete")
+    public Mold completeMold(@PathVariable String id) {
+        return moldService.completeMold(id);
+    }
+
+    //Analatical part controllers
+    @GetMapping("/analytics/{year}")
+    public ResponseEntity<MoldStatisticsDTO> getComprehensiveStatistics(@PathVariable int year) {
+        MoldStatisticsDTO statistics = moldService.getComprehensiveMoldStatistics(year);
+        return ResponseEntity.ok(statistics);
+    }
+
 }

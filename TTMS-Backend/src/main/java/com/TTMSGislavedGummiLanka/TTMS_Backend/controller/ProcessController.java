@@ -1,11 +1,13 @@
 package com.TTMSGislavedGummiLanka.TTMS_Backend.controller;
 
+import com.TTMSGislavedGummiLanka.TTMS_Backend.dto.ProcessDetailsDTO;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.entity.Process;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.exception.ProcessNotFoundException;
 import com.TTMSGislavedGummiLanka.TTMS_Backend.service.ProcessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,10 +25,10 @@ public class ProcessController {
     }
 
     @PostMapping("/shared")
+    @PreAuthorize("hasAuthority('ROLE_MACHINE_OPERATOR_01')")
     public Process insert(@RequestBody Process process) {
         return processService.addProcess(process);
     }
-
     @PutMapping("/shared/{id}")
     public Process update(@PathVariable String id, @RequestBody Process process) {
         return processService.updateProcess(id, process);
@@ -41,4 +43,18 @@ public class ProcessController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
+    @PutMapping("/finish/{id}")
+    @PreAuthorize("hasAuthority('ROLE_MACHINE_OPERATOR_01')")
+    public Process finish(@PathVariable String id) {
+        return processService.finishProcess(id);
+    }
+
+
+    @GetMapping("/details/{id}")
+    @PreAuthorize("hasRole('ROLE_MANAGER')")
+    public ResponseEntity<ProcessDetailsDTO> getProcessDetails(@PathVariable String id) {
+        ProcessDetailsDTO processDetails = processService.getProcessDetails(id);
+        return ResponseEntity.ok(processDetails);
+    }
+
 }

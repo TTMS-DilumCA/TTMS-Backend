@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81e2cf9-56c6-48d2-80be-0d066be40a98" name="Changes" comment="created correct api endpoints and deleted unneccesory files">
+    <list default="true" id="f81e2cf9-56c6-48d2-80be-0d066be40a98" name="Changes" comment="last modified mold entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -42,12 +42,14 @@
     &quot;accountId&quot;: &quot;e8837b2a-5ccb-485d-96d0-c1c44eaca869&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2nyBit3dVoABbeKMoQYVbNJA6GH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,6 +61,7 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.TtmsBackendApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;add-new-user&quot;,
@@ -89,8 +92,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
       </set>
     </attachedChunks>
   </component>
@@ -144,6 +147,53 @@
       <workItem from="1744866740560" duration="4493000" />
       <workItem from="1745298202644" duration="53000" />
       <workItem from="1745299762653" duration="839000" />
+      <workItem from="1745904543778" duration="14637000" />
+      <workItem from="1749983473405" duration="191000" />
+      <workItem from="1749983727025" duration="1598000" />
+      <workItem from="1750072266249" duration="1242000" />
+      <workItem from="1750773214350" duration="835000" />
+      <workItem from="1750776465695" duration="1420000" />
+      <workItem from="1750923324086" duration="1686000" />
+      <workItem from="1750999095630" duration="12094000" />
+      <workItem from="1751083784312" duration="661000" />
+      <workItem from="1751084709206" duration="1741000" />
+      <workItem from="1751171937071" duration="1303000" />
+      <workItem from="1751529497024" duration="2473000" />
+      <workItem from="1751604360370" duration="6844000" />
+      <workItem from="1751702383675" duration="6308000" />
+      <workItem from="1751790410535" duration="9216000" />
+      <workItem from="1752209049081" duration="655000" />
+      <workItem from="1752246984321" duration="725000" />
+      <workItem from="1752293013048" duration="864000" />
+      <workItem from="1752416272654" duration="2173000" />
+      <workItem from="1752502591307" duration="2569000" />
+      <workItem from="1752584726623" duration="3869000" />
+      <workItem from="1752763888356" duration="46000" />
+      <workItem from="1752765807957" duration="4882000" />
+      <workItem from="1752817270514" duration="15816000" />
+      <workItem from="1752899632928" duration="695000" />
+      <workItem from="1752929642793" duration="3215000" />
+      <workItem from="1753173213164" duration="651000" />
+      <workItem from="1753255436679" duration="1173000" />
+      <workItem from="1753334960900" duration="8365000" />
+      <workItem from="1753418766813" duration="3499000" />
+      <workItem from="1753614127592" duration="465000" />
+      <workItem from="1753614722497" duration="6526000" />
+      <workItem from="1753637361587" duration="983000" />
+      <workItem from="1753639039971" duration="888000" />
+      <workItem from="1753709405652" duration="4345000" />
+      <workItem from="1753795743283" duration="4016000" />
+      <workItem from="1753886747229" duration="2194000" />
+      <workItem from="1754202533792" duration="1409000" />
+      <workItem from="1754288748398" duration="603000" />
+      <workItem from="1754374432461" duration="14232000" />
+      <workItem from="1754464335900" duration="5697000" />
+      <workItem from="1755340286726" duration="1249000" />
+      <workItem from="1755350041084" duration="1442000" />
+      <workItem from="1755354593608" duration="761000" />
+      <workItem from="1755436738308" duration="4517000" />
+      <workItem from="1755497244517" duration="804000" />
+      <workItem from="1755512189218" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -209,7 +259,55 @@
       <option name="project" value="LOCAL" />
       <updated>1744873673809</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="created correct api endpoints and deleted unneccesory files">
+      <option name="closed" value="true" />
+      <created>1745301236103</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745301236103</updated>
+    </task>
+    <task id="LOCAL-00010" summary="created correct api endpoints and deleted unneccesory files">
+      <option name="closed" value="true" />
+      <created>1745301246479</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745301246479</updated>
+    </task>
+    <task id="LOCAL-00011" summary="created correct api endpoints and deleted unneccesory files">
+      <option name="closed" value="true" />
+      <created>1745301254538</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745301254538</updated>
+    </task>
+    <task id="LOCAL-00012" summary="created correct api endpoints and deleted unneccesory files">
+      <option name="closed" value="true" />
+      <created>1751704537533</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751704537533</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated mold entity">
+      <option name="closed" value="true" />
+      <created>1753368592626</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1753368592626</updated>
+    </task>
+    <task id="LOCAL-00014" summary="last modified mold entity">
+      <option name="closed" value="true" />
+      <created>1755437956142</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1755437956143</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +343,20 @@
     <MESSAGE value="user authentication new" />
     <MESSAGE value="converted to the latest" />
     <MESSAGE value="created correct api endpoints and deleted unneccesory files" />
-    <option name="LAST_COMMIT_MESSAGE" value="created correct api endpoints and deleted unneccesory files" />
+    <MESSAGE value="updated mold entity" />
+    <MESSAGE value="last modified mold entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="last modified mold entity" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/ProcessOverviewDTO.java</url>
+          <line>6</line>
+          <log-expression expression="Data&#10;public class ProcessOverviewDTO {&#10;    private double averageProcessTime;&#10;    private Map&lt;String, Integer&gt; statusDistribution;&#10;    private Map&lt;String, OperatorPerformanceDTO&gt; operatorPerformance;&#10;    private Map&lt;String, Integer&gt; processDistribution;&#10;}" language="JAVA" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
