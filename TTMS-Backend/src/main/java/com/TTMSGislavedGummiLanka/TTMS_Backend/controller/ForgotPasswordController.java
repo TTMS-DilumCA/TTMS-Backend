@@ -87,17 +87,17 @@ public class ForgotPasswordController {
     }
 
     // to change password
-  @PostMapping("/changePassword/{email}")
-public ResponseEntity<String> changePasswordHandler(@RequestBody ChangePassword changePassword, @PathVariable String email) {
+    @PostMapping("/changePassword/{email}")
+    public ResponseEntity<String> changePasswordHandler(@RequestBody ChangePassword changePassword, @PathVariable String email) {
 
-    if (!Objects.equals(changePassword.password(), changePassword.repeatPassword())) {
-        return new ResponseEntity<>("Passwords do not match", HttpStatus.BAD_REQUEST);
+        if (!Objects.equals(changePassword.password(), changePassword.repeatPassword())) {
+            return new ResponseEntity<>("Passwords do not match", HttpStatus.BAD_REQUEST);
+        }
+
+        String encodedPassword = passwordEncoder.encode(changePassword.password());
+        userRepo.updatePasswordByEmail(email, encodedPassword);
+        return ResponseEntity.ok("Password changed successfully");
     }
-
-    String encodedPassword = passwordEncoder.encode(changePassword.password());
-    userRepo.updatePasswordByEmail(email, encodedPassword);
-    return ResponseEntity.ok("Password changed successfully");
-}
     private int otpGenerator() {
         Random random = new Random();
         return random.nextInt(900_000) + 100_000; // Generates a 6-digit OTP as an int
