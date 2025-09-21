@@ -4,43 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f81e2cf9-56c6-48d2-80be-0d066be40a98" name="Changes" comment="updated mold entity">
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/SystemOverviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/CategoryBreakdownDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/CategoryDeliveryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/CustomerOverviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/DeliveryPerformanceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/MachineDeliveryPerformanceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/MoldOverviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/MoldStatisticsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/ProcessOverviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/SystemOverviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/ToolOverviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/TopCustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/analysedtos/WorkforceOverviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/enums/TimeRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/CustomerRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/SystemOverviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/SystemOverviewServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/util/DateRangeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="f81e2cf9-56c6-48d2-80be-0d066be40a98" name="Changes" comment="last modified mold entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/MoldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/controller/MoldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/ProcessDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/dto/ProcessDetailsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Mold.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Mold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/MoldRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/MoldRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ProcessRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ProcessRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ToolsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/repo/ToolsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/MoldService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/MoldService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/MoldServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/MoldServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/ProcessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TTMS-Backend/src/main/java/com/TTMSGislavedGummiLanka/TTMS_Backend/service/impl/ProcessServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +191,9 @@
       <workItem from="1755340286726" duration="1249000" />
       <workItem from="1755350041084" duration="1442000" />
       <workItem from="1755354593608" duration="761000" />
-      <workItem from="1755436738308" duration="425000" />
+      <workItem from="1755436738308" duration="4517000" />
+      <workItem from="1755497244517" duration="804000" />
+      <workItem from="1755512189218" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -332,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753368592626</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="last modified mold entity">
+      <option name="closed" value="true" />
+      <created>1755437956142</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1755437956143</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +344,8 @@
     <MESSAGE value="converted to the latest" />
     <MESSAGE value="created correct api endpoints and deleted unneccesory files" />
     <MESSAGE value="updated mold entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated mold entity" />
+    <MESSAGE value="last modified mold entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="last modified mold entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

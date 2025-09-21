@@ -32,13 +32,33 @@ public class AddNewUserServiceImpl implements AddNewUserService {
 
         User savedUser = userRepo.save(user);
 
-        // Send email with credentials
-        String emailContent = "Dear " + fullname + ",\n\n" +
-                "You have been added to the TTMS system. Below are your login credentials:\n\n" +
-                "Username: " + email + "\n" +
-                "Password: " + password + "\n\n" +
-                "Please change your password upon first login.\n\n" +
-                "Best regards,\nTTMS Team";
+        // Send email with credentials using HTML formatting
+        String emailContent = String.format("""
+            <html>
+            <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+                <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+                    <h2 style="color: #2c3e50;">Welcome to TTMS</h2>
+                    <p>Dear %s,</p>
+                    
+                    <p>Your account has been successfully created in the TTMS system. Here are your login credentials:</p>
+                    
+                    <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin: 20px 0;">
+                        <p style="margin: 5px 0;"><strong>Username:</strong> %s</p>
+                        <p style="margin: 5px 0;"><strong>Password:</strong> %s</p>
+                    </div>
+                    
+                    <p style="color: #e74c3c;"><strong>Important:</strong> For security reasons, please change your password when you first log in.</p>
+                    
+                    <p>If you have any questions or need assistance, please don't hesitate to contact the IT support team.</p>
+                    
+                    <p style="margin-top: 30px;">Best regards,<br>TTMS Team</p>
+                    
+                    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+                    <p style="font-size: 12px; color: #777;">This is an automated message. Please do not reply to this email.</p>
+                </div>
+            </body>
+            </html>
+            """, fullname, email, password);
 
         MailBody mailBody = new MailBody(email, "Welcome to TTMS", emailContent);
         emailService.sendSimpleMessage(mailBody);

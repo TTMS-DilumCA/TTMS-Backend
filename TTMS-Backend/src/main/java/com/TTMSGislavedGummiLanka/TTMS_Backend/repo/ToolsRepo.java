@@ -12,6 +12,7 @@ import java.util.List;
 public interface ToolsRepo extends MongoRepository<Tools, String> {
     List<Tools> findByToolCrafterId(String toolCrafterId, Sort sort);
     List<Tools> findByTimestampBetween(Date startDate, Date endDate);
+    List<Tools> findByToolCrafterId(String toolCrafterId);
 
 
 }

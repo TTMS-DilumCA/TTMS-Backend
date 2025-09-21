@@ -20,18 +20,18 @@ public class ProcessDetailsDTO {
     private Date finishedAt;
 
     private String mcounter;
-    
+
     // Operator details
     private OperatorDetails startedOperator;
     private OperatorDetails finishedOperator;
-    
+
     // Mold details
     private MoldDetails mold;
-    
+
     // Duration calculations
     private String duration;
     private long durationInMinutes;
-    
+
     @Data
     public static class OperatorDetails {
         private String id;
@@ -41,7 +41,7 @@ public class ProcessDetailsDTO {
         private String profileImageUrl;
         private String role;
     }
-    
+
     @Data
     public static class MoldDetails {
         private String id;
